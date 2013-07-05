@@ -2,7 +2,7 @@
 
 return array(
 
-    'username' => 'Gewora',
-    'api_key' => '3swhywvgrimffvz4ad5ttn2p34t0eodv',
+    'username' => 'Your Envato Username',
+    'api_key' => 'Your Envato API Key',
 
 );

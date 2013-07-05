@@ -43,8 +43,6 @@ return array(
 );
 ```
 
-And finally run `composer dump-autoload` on the terminal.
-
 Now you can use the package like that:
 
 ```
