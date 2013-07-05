@@ -17,7 +17,7 @@ To get the latest version of Gewora/Envato simply require it in your `composer.j
 "gewora/envato": "dev-master"
 ```
 
-After that, you'll need to run `composer install` to download the latest Version and updating the autoloader.
+After that, you'll need to run `composer update` to download the latest Version and updating the autoloader.
 
 Once Gewora/Envato is installed, you need to register the ServiceProvider. To do that open `app/config/app.php` and add the following to the `providers` key.
 
