@@ -1,6 +1,7 @@
 {
     "name": "gewora/envato",
     "description": "A Laravel 4 package for the Envato marketplaces - like themeforest.net.",
+    "keywords": ["laravel", "laravel4", "envato", "themeforest", "codecanyon", "api", "gewora"],
     "authors": [
         {
             "name": "Michael Wihl",
