@@ -16,7 +16,7 @@ use Illuminate\Config\Repository;
 
 class Envato
 {    
-    /*
+    /**
     * Holds the Config Instance
     *
     * @var Illuminate\Config\Repository
@@ -33,7 +33,7 @@ class Envato
         $this->public_url = 'http://marketplace.envato.com/api/edge/set.json';
     }  
     
-    /*
+    /**
     * Retrieve the balance on your account.
     *
     * @return string
@@ -44,7 +44,7 @@ class Envato
        return $balance->balance;
     }    
     
-    /*
+    /**
     * Retrieve details for your most recent sales.
     *
     * @param int $limit  - Optional - The number of sales to return.
@@ -56,7 +56,7 @@ class Envato
         return $this->set_limit($sales, $limit);
     } 
     
-    /*
+    /**
     * Retrieve your account information - Balance, Country, Name, etc.
     *
     * @return array
@@ -66,7 +66,7 @@ class Envato
         return $this->get_private_data('account');
     }
     
-    /*
+    /**
     * Retrieve monthly stats/sales - Number of sales, monthly income, etc.
     * 
     * @param int $limit  - Optional - The number of months to return.
@@ -78,7 +78,7 @@ class Envato
         return $this->set_limit($earnings, $limit);
     }  
     
-    /*
+    /**
     * Perform a search on all envato marketplaces, or a specific one.
     *
     * @param string $search_query What do you want to search for?
@@ -99,7 +99,7 @@ class Envato
         return $this->set_limit($search_results, $limit);
     }
 
-    /*
+    /**
     * Returns the featured item, featured author, and free file of the month for the given marketplace.
     *
     * @param string $marketplace_name - The desired marketplace.
@@ -111,7 +111,7 @@ class Envato
         return $this->fetch($url, 'features');
     }    
     
-    /*
+    /**
     * Retrieve the details for a specific marketplace item.
     *
     * @param string $item_id - The id of the item you want to retrive the details
@@ -123,7 +123,7 @@ class Envato
         return $this->fetch($url, 'item');
     }  
     
-    /*
+    /**
     * This function is similar to new_files, but focuses on a specific author's files.
     *
     * @param string $username - The desired username.
@@ -138,7 +138,7 @@ class Envato
         return $this->set_limit( $this->fetch($url, 'new-files-from-user'), $limit );
     }
     
-    /*
+    /**
     * Retrieve public user data for a specific username
     *
     * @param string $username
@@ -151,7 +151,7 @@ class Envato
         return $this->fetch($url, 'user');
     }    
     
-    /*
+    /**
     * Retrieve the most popular files from the previous week.
     *
     * @param string $marketplace_name - Desired marketplace.
@@ -165,7 +165,7 @@ class Envato
         return $this->fetch($url, 'popular');
     }
     
-    /*
+    /**
     * Retrieves the new files from a specific marketplaces and category.
     *
     * @param string $marketplace_name - Marketplace name.
@@ -186,7 +186,7 @@ class Envato
         }
     }
     
-    /*
+    /**
     * Retrieve an array of all items in the desired collection.
     *
     * @param string $collection_id - The id of the requested collection. You find the id in the url of the collection
@@ -199,7 +199,7 @@ class Envato
         return $this->fetch($url, 'collection');
     }   
     
-    /* 
+    /**
     * Verify if a person purchased your item.
     *
     * @param string $purchase_code - The buyer's purchase code
@@ -212,7 +212,7 @@ class Envato
         return $verify;
     }   
     
-    /* 
+    /**
     * Retrieve the infomrations to the given set
     *
     * @param string $set - The desired set
@@ -239,7 +239,7 @@ class Envato
         return $fetch->$set;        
     }
     
-    /*
+    /**
     * Set a limit on the retrieved data
     *
     * @param array $data  - The original array.
@@ -260,7 +260,7 @@ class Envato
         return $data_new;
     }    
     
-    /*
+    /**
     * Fetches the data from the Envato API.
     *
     * @param string $url - The full url for the API call.
