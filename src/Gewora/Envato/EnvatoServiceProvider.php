@@ -5,7 +5,7 @@
  * 
  *
  * @package Gewora/Envato
- * @author Michael Wihl <admin@gewora.net>
+ * @author Gewora <admin@gewora.net>
  * @copyright Copyright (c) 2013 by Gewora Project Team
  * @license BSD-3-Clause
  * @version 1.0.0
