@@ -3,7 +3,7 @@
     "description": "A Laravel 4 package for the Envato marketplaces - like themeforest.net.",
     "keywords": ["laravel", "laravel4", "envato", "themeforest", "codecanyon", "api", "gewora"],
     "homepage": "http://www.gewora.net",
-    "license": "BSD-3-Clause",    
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Michael Wihl",
@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "4.0.x"
+        "illuminate/support": "4.1.x"
     },
     "autoload": {
         "psr-0": {
