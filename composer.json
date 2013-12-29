@@ -6,8 +6,8 @@
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Michael Wihl",
-            "email": "admin@gewora.net"
+            "name": "Gewora.net",
+            "email": "github@gewora.net"
         }
     ],
     "require": {
