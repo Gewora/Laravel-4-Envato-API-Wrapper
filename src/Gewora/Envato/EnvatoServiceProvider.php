@@ -2,7 +2,7 @@
 
 /**
  * Starts the Envato Wrapper
- * 
+ *
  *
  * @package Gewora/Envato
  * @author Gewora <admin@gewora.net>
@@ -30,7 +30,7 @@ class EnvatoServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('gewora/envato');
+		$this->package('gewora/envato', 'gewora_envato');
 	}
 
 	/**
@@ -44,12 +44,12 @@ class EnvatoServiceProvider extends ServiceProvider {
             {
               return new Envato($app['config']);
             });
-	
+
             $this->app->booting(function()
             {
               $loader = \Illuminate\Foundation\AliasLoader::getInstance();
               $loader->alias('Envato', 'Gewora\Envato\Facades\Envato');
-            });           
+            });
         }
 
 	/**
