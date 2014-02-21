@@ -29,7 +29,7 @@ Once Gewora/Envato is installed, you need to register the ServiceProvider. To do
 First you need to publish the config file. To do that, type the following in the terminal:
 
 ```
-php artisan config:publish Gewora\Envato
+php artisan config:publish Gewora/Envato
 ```
 
 Now open: `app/config/packages/Gewora/config.php` and fill it with your data
