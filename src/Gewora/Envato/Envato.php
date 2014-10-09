@@ -29,8 +29,8 @@ class Envato
         $this->config = $config;
         $this->username = $this->config->get('gewora_envato::username');
         $this->api_key = $this->config->get('gewora_envato::api_key');
-        $this->private_url = 'http://marketplace.envato.com/api/edge/' .$this->username. '/' .$this->api_key. '/';
-        $this->public_url = 'http://marketplace.envato.com/api/edge/set.json';
+        $this->private_url = 'http://marketplace.envato.com/api/v3/' .$this->username. '/' .$this->api_key. '/';
+        $this->public_url = 'http://marketplace.envato.com/api/v3/set.json';
     }
 
     /**
@@ -294,6 +294,7 @@ class Envato
 
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Laravel 4 Envato API Wrapper');
 
         $data = curl_exec($ch);
         curl_close($ch);
